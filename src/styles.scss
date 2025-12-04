@@ -3,9 +3,14 @@
 @import 'lightgallery/scss/lightgallery';
 body {
   font-family: 'Cinzel', serif;
-  //background-image: url('assets/img/elements/background_AI.jpg');
   background-image: linear-gradient(to bottom, black 20%, rgba(255, 255, 255, 0) 80%),
     url('assets/img/elements/background_AI.jpg');
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
 :root {
@@ -14,6 +19,7 @@ body {
   --light-grey: #cdcdcd;
   --white: #f0f0f0;
   --dark-grey: #c2c0c0;
+  --darker-grey: #424242;
   --black: #030213;
 
   --card-opaque-grey: rgba(255, 255, 255, 0.6) !important;
@@ -27,6 +33,10 @@ body {
   /* Navbar height */
   --mobile-navbar-height: 75px;
   --desktop-navbar-height: 100px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /** Text styles
@@ -121,11 +131,14 @@ body {
   display: inline-block; /* fix width stretching */
   margin: 0;
   color: var(--black);
-  height: 40px;
+  height: fit-content;
   width: fit-content;
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  p {
+    margin: 0;
+  }
 }
 
 .button-navbar:hover {

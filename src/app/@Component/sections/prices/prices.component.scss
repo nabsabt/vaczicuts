@@ -1,0 +1,25 @@
+.prices-section {
+  background-color: var(--white);
+
+  table {
+    margin-top: 20vh;
+  }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 701px) {
+  .prices-section {
+    padding: 5rem;
+    min-height: calc(100vh - var(--desktop-navbar-height));
+    height: fit-content;
+  }
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 700px) {
+  .prices-section {
+    padding: 2rem;
+    min-height: calc(100vh - var(--mobile-navbar-height));
+    height: fit-content;
+  }
+}

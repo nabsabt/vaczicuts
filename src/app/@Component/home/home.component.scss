@@ -1,5 +1,8 @@
 .home-container {
   overflow-y: auto;
+  height: 100vh;
+  position: relative;
+
   .hero-section {
     background-size: cover;
     background-position: center;

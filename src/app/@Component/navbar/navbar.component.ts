@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   public changeToLangValue: string;
   constructor(private translateService: TranslateService) {
     translateService.setDefaultLang('en');
-    translateService.use('en');
+    translateService.use('hu');
   }
   ngOnInit(): void {
     this.changeToLangValue = this.translateService.currentLang === 'en' ? 'hu' : 'en';

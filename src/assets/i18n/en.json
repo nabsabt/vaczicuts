@@ -6,5 +6,12 @@
   "CONTACT": "contact",
   "HERO-SECTION-TITLE": "your hair.<br> your style.<br> your story.",
   "HERO-SECTION-SUBTITLE": "every haircut tailored for you!",
-  "INTRO-TEXT": "a haircut with me isn’t just routine — it’s an experience. I love good vibes, precise fades, and seeing clients leave with a smile. I don’t believe in templates. Every hairstyle is unique, just like the person wearing it. If you're looking for a fresh style that’s truly tailored to you, you’re in the right place!"
+  "INTRO-TEXT": "a haircut with me isn’t just routine — it’s an experience. I love good vibes, precise fades, and seeing clients leave with a smile. I don’t believe in templates. Every hairstyle is unique, just like the person wearing it. If you're looking for a fresh style that’s truly tailored to you, you’re in the right place!",
+
+  "SERVICE": "service",
+  "PRICE": "price",
+  "SERV_HAIRCUT": "haircut",
+  "SERV_BEARD": "beard trim",
+  "SERV_BEARD_HAIRCUT": "hair + beard cut",
+  "SERV_LONGHAIR": "long hair cut with scissors"
 }

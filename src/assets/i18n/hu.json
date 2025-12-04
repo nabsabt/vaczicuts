@@ -6,5 +6,12 @@
   "CONTACT": "kapcsolat",
   "HERO-SECTION-TITLE": "a te hajad.<br> a te stílusod.<br> a te sztorid.",
   "HERO-SECTION-SUBTITLE": "minden vágás egyénre szabva!",
-  "INTRO-TEXT": "a hajvágás nálam nem rutin, hanem egy élmény. szeretem a jó hangulatot, a precíz fade-et, és azt, ha egy vendég mosolyogva távozik. nem hiszek a sablonokban. minden frizura egyedi, akárcsak az, aki viseli. ha friss stílust keresel, amit tényleg neked vágnak, akkor nálam a helyed!"
+  "INTRO-TEXT": "a hajvágás nálam nem rutin, hanem egy élmény. szeretem a jó hangulatot, a precíz fade-et, és azt, ha egy vendég mosolyogva távozik. nem hiszek a sablonokban. minden frizura egyedi, akárcsak az, aki viseli. ha friss stílust keresel, amit tényleg neked vágnak, akkor nálam a helyed!",
+
+  "SERVICE": "szolgáltatás",
+  "PRICE": "ár",
+  "SERV_HAIRCUT": "hajvágás",
+  "SERV_BEARD": "szakáll",
+  "SERV_BEARD_HAIRCUT": "haj + szakáll",
+  "SERV_LONGHAIR": "Ollós hosszú haj vágás"
 }

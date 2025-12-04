@@ -1,7 +1,9 @@
 .ref-section {
+  p {
+    color: white;
+    mix-blend-mode: difference;
+  }
   .lightgallery {
-    a {
-    }
     img {
       margin: 1rem;
       width: 250px;
