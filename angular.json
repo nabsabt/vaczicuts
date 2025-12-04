@@ -17,10 +17,9 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": {
-              "base": "docs",
-              "browser": ""
-            },
+            "outputPath": "docs",
+            "baseHref": "/vaczicuts/",
+            "deployUrl": "/vaczicuts/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
