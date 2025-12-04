@@ -1,1 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@import 'lightgallery/scss/lightgallery';
+body {
+  font-family: 'Cinzel', serif;
+  //background-image: url('assets/img/elements/background_AI.jpg');
+  background-image: linear-gradient(to bottom, black 20%, rgba(255, 255, 255, 0) 80%),
+    url('assets/img/elements/background_AI.jpg');
+}
+
+:root {
+  --bs-body-font-family: 'Cinzel', serif !important;
+
+  --light-grey: #cdcdcd;
+  --white: #f0f0f0;
+  --dark-grey: #c2c0c0;
+  --black: #030213;
+
+  --card-opaque-grey: rgba(255, 255, 255, 0.6) !important;
+  /* Font */
+  --font-family: 'Cinzel', sans-serif;
+
+  /* Viewport sizes */
+  --mobile-max-viewport: 700px;
+  --desktop-min-viewport: 701px;
+
+  /* Navbar height */
+  --mobile-navbar-height: 75px;
+  --desktop-navbar-height: 100px;
+}
+
+/** Text styles
+*/
+.txt-font-light {
+  font-weight: 300;
+}
+
+.txt-font-medium {
+  font-weight: 500;
+}
+
+.txt-font-bold {
+  font-weight: 700;
+}
+
+.txt-white {
+  color: var(white);
+}
+
+.txt-black {
+  color: var(--black);
+}
+
+.txt-xs {
+  font-size: 12px;
+}
+
+.txt-sm {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.txt-md {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.txt-lg {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.txt-xl {
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+.txt-huge {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 5px;
+}
+
+/** background styles
+*/
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+.bg-dark-grey {
+  background-color: var(--dark-grey);
+}
+
+/**Buttons
+*/
+
+.button-LANG {
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+  height: fit-content !important;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+
+  border-bottom: 1px var(--black) solid;
+  cursor: pointer;
+  p {
+    margin: 0;
+  }
+}
+
+.button-navbar {
+  transition: 200ms;
+  border: 1px solid transparent; /* <-- important */
+  transition: border-color 200ms, border-width 200ms, border-radius 200ms;
+  min-width: 160px;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  display: inline-block; /* fix width stretching */
+  margin: 0;
+  color: var(--black);
+  height: 40px;
+  width: fit-content;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-navbar:hover {
+  border-radius: 5px;
+  border-color: var(--black); /* animate color only */
+  transition: 200ms;
+
+  text-decoration: none;
+}

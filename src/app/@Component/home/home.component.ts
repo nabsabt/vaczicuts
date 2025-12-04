@@ -1,0 +1,54 @@
+import { Component, OnInit, signal } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AboutSection } from '../sections/about/about.section';
+import { ReferencesSection } from '../sections/references/references.component';
+/* import { AboutSection } from '../sections/about/about.section';
+import { SkillsSection } from '../sections/skills/skills.section';
+import { ProjectsSection } from '../sections/projects/projects.section';
+import { ContactSection } from '../sections/contact/contact.section'; */
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
+  standalone: true,
+  imports: [
+    TranslateModule,
+    RouterModule,
+    FormsModule,
+    AboutSection,
+    ReferencesSection,
+    /* PricesSection,
+    ContactSection,  */
+  ],
+  providers: [],
+})
+export class HomeComponent implements OnInit {
+  public subtitleText = signal<string[]>(['']);
+
+  constructor(private translateService: TranslateService, private activatedRoute: ActivatedRoute) {
+    translateService.setDefaultLang('en');
+    translateService.use('en');
+  }
+  ngOnInit(): void {
+    this.activatedRoute.fragment.subscribe((fragment: string | null) => {
+      if (fragment) this.jumpToSection(fragment);
+    });
+  }
+
+  public jumpToSection(section: string): void {
+    const element = document.getElementById(section);
+    if (element) {
+      const yOffset = window.innerWidth < 701 ? 75 + 10 : 100 + 10; // Adjust offset for mobile view
+      const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  public navigateToExternalPage(url: string) {
+    window.open(url, '_blank');
+  }
+}

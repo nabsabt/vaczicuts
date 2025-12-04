@@ -1,0 +1,26 @@
+<div class="home-container">
+  <!--Hero section-->
+  <div class="hero-section hero-bg section">
+    <div class="card">
+      <div class="title">
+        <p
+          class="txt-font-bold txt-black txt-huge"
+          [innerHTML]="'HERO-SECTION-TITLE' | translate"
+        ></p>
+      </div>
+      <div class="subtitle">
+        <p class="txt-font-medium txt-black txt-lg">{{ 'HERO-SECTION-SUBTITLE' | translate }}</p>
+      </div>
+    </div>
+  </div>
+
+  <about-section #About id="About"></about-section>
+
+  <references-section #References id="References"></references-section>
+
+  <!-- <prices-section #Prices id="Prices"></skills-section>
+
+  <references-section #References id="References"></projects-section>
+
+  <contact-section #Contact id="Contact"></contact-section> -->
+</div>

@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand-lg fixed-top bg-white">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler mx-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div #navbarSupportedContent class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-inner-content">
+        <!--Logo-->
+        <div class="logo-container">
+          <a class="navbar-brand" [routerLink]="['']" (click)="collapseNavbar()">
+            <img src="assets/img/elements/logo_dark.png" alt="Logo" class="logo-image img-fluid" />
+          </a>
+          <div class="name-lang-container">
+            <div class="name">
+              <p class="txt-xl txt-font-bold m-0">Váczi Attila</p>
+              <p class="txt-l txt-font-medium m-0">
+                {{ 'HAIRDRESSER' | translate }}
+              </p>
+            </div>
+            <div class="lang">
+              <button class="button-LANG" (click)="changeLanguage()">
+                <p class="txt-font-bold">
+                  {{ changeToLangValue | uppercase }}
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Links-->
+        <div>
+          <ul class="navbar-nav navbar-links mb-lg-0">
+            <!--About-->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                [routerLink]="['']"
+                fragment="About"
+                (click)="collapseNavbar()"
+              >
+                <button class="button-navbar">
+                  <p class="txt-md">
+                    {{ 'ABOUT' | translate }}
+                  </p>
+                </button>
+              </a>
+            </li>
+
+            <!--References-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['']"
+                fragment="References"
+                (click)="collapseNavbar()"
+                ><button class="button-navbar">
+                  <p class="txt-md">
+                    {{ 'REFERENCES' | translate }}
+                  </p>
+                </button></a
+              >
+            </li>
+
+            <!--Prices-->
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['']" fragment="Prices" (click)="collapseNavbar()"
+                ><button class="button-navbar">
+                  <p class="txt-md">
+                    {{ 'PRICES' | translate }}
+                  </p>
+                </button></a
+              >
+            </li>
+
+            <!--Contact-->
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['']" fragment="Contact" (click)="collapseNavbar()"
+                ><button class="button-navbar">
+                  <p class="txt-md">
+                    {{ 'CONTACT' | translate }}
+                  </p>
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
