@@ -18,8 +18,8 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": "docs",
-            "baseHref": "/vaczicuts/",
-            "deployUrl": "/vaczicuts/",
+            "baseHref": "/",
+            "deployUrl": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
